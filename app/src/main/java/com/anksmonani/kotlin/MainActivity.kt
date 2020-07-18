@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
     private var mAdapter: CustomAdapter?= null
     private var mUserDataList: MutableList<UserData> = ArrayList()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

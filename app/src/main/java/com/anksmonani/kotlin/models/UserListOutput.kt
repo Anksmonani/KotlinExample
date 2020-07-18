@@ -8,11 +8,7 @@ data class UserListOutput(
 )
 
 data class UserData(
-    val FromDate: String,
     val GuestImage: String,
-    val GuestName: String,
-    val PropertyName: String,
-    val Status: String,
-    val StatusId: String,
-    val ToDate: String
+    val GuestName: String
+
 )
