@@ -2,12 +2,12 @@ package com.anksmonani.kotlin.models
 
 
 data class UserListOutput(
-    val Data: List<Data>,
+    val Data: List<UserData>,
     val Message: String,
     val Status: String
 )
 
-data class Data(
+data class UserData(
     val FromDate: String,
     val GuestImage: String,
     val GuestName: String,
