@@ -4,9 +4,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitBuilder {
-    const val BASE_URL: String = "https://open-api.xyz/"
+    const val BASE_URL: String = "https://run.mocky.io/v3/"
 
-    val retrofitBuilder: Retrofit.Builder by lazy {
+    val mRetrofitBuilder: Retrofit.Builder by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -14,7 +14,7 @@ object RetrofitBuilder {
 
     val apiService: APIService by lazy {
 
-        retrofitBuilder
+        mRetrofitBuilder
             .build()
             .create(APIService::class.java)
     }
